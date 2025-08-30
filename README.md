@@ -1,12 +1,64 @@
-# React + Vite
+# **Aplicación de E-commerce con React Router**
+Esta es una aplicación React que implementa un sistema de navegación entre tres pantallas (Inicio, Catálogo y Carrito) utilizando React Router DOM.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## **Características**
+- Tres rutas principales: / (Inicio), /catalogo y /carrito
+- Navegación persistente con una barra de navegación superior
+- Catálogo de productos que muestra al menos 6 productos usando props
+- Página de carrito con mensaje informativo
+- Diseño responsive y atractivo
 
-Currently, two official plugins are available:
+## **Tecnologías utilizadas**
+- React
+- React Router DOM
+- Vite (como herramienta de construcción)
+- CSS-in-JS para los estilos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## **Instalación y ejecución**
+1. Clona el repositorio:
+```bash
+git clone <url-del-repositorio>
+```
+2. Instala las dependencias:
+```bash
+npm install
+```
+3. Ejecuta la aplicación en modo desarrollo:
+```bash
+npm run dev
+```
+4. Abre tu navegador y ve a http://localhost:5173
 
-## Expanding the ESLint configuration
+## **Estructura del proyecto**
+```text
+src/
+├── components/
+│   ├── Navbar.jsx
+│   └── Producto.jsx
+├── pages/
+│   ├── Home.jsx
+│   ├── Catalogo.jsx
+│   └── Carrito.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## **Capturas de pantalla**
+1. Página de Inicio
+<img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/15ac9995-3e07-4250-bffb-b0afa4117b60" />
+
+2. Página de Catálogo
+<img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/4cf22e1b-f711-4f4c-971c-33acb817375c" />
+
+3. Página de Carrito
+<img width="1919" height="918" alt="image" src="https://github.com/user-attachments/assets/471d7559-34d9-4408-8226-03052a229d2a" />
+
+## **Funcionalidades implementadas**
+- Configuración de React Router con tres rutas
+- Componente de navegación con links a todas las páginas
+- Página de inicio con información de la tienda
+- Página de catálogo con al menos 6 productos
+- Uso de props para pasar información de productos
+- Página de carrito con mensaje fijo
+- Diseño responsive y atractivo
